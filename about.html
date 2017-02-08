@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CUKSA</title>
+    <meta name="description" content="This is a website to introduce Chinese University Korean Student Association" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link rel="stylesheet" href="./css/c3.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html"><img class="brand-img img-responsive" src="./assets/cuksa_logo_gradient.svg" />
+                    <span>CUKSA</span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="page-scroll" href="./about.html">About</a></li>
+                    <li><a class="page-scroll" href="./activities.html">Activities</a></li>
+                    <li><a class="page-scroll" href="./colleges.html">Colleges</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="Login" href="#loginModal">Login</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="Signup" href="#signupModal">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="about">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">About CUKSA</h1>
+                <hr>
+            </div>
+        </div>
+    </header>
+    <section class="bg-white">
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>CUKSA 회장 인사말</h1>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-dark">홍콩중문대학교 한인학생회는 한국인 학생들의 자발적인 의지와 노력으로 2010년에 설립되었습니다. 영문 명칭은 CUKSA로, Korean Sutdent Association, The Chinese University of Hong Kong의 약자입니다.</p>
+                    <p class="text-dark">2016-17 학기로 제 6기를 맞이한 한인학생회는 중문대 내 한국인 학부 재학생, 대학원생, 졸업생, 교환학생, 교수님들 간의 교류증진, 실력향상, 그리고 외국 커뮤니티와의 문화교류를 목표로 하고 있습니다. 선후배간 활발한 교류를 통한 상호 발전에 힘쓰고 있으며, 여러 문화행사를 통하여 홍콩 내 한국문화 전파에도 노력하고 있습니다. 또한, 한인학생회 내 동아리 활동을 지우너하고, 다양한 행사와 함께 학생들의
+                        보람찬 학교 생활을 응원하고 있습니다.</p>
+                    <p class="text-dark"> 홍콩 중문대 한인학생들의 목소리를 대변하며 학교, 외부 기관, 단체와의 원활한 소통을 할 수 있는 환경을 조성하도록 주력하고자 합니다.한인학생 여러분의 더 나은 홍콩 생활을 위해 최선을 다하는 한인학생회가 되도록 하겠습니다. 홍콩중문대 내 모든 한국인 학생들의 성공적인 대학생활을 소망합니다. 감사합니다.</p>
+                    <br>
+                    <small class="pull-right text-muted">제 6기 홍콩중문대학교 한인학생회장 <strong>이동민</strong> 올림</small>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary">
+        <div class="container">
+            <div class="caption text-center">
+                <h1>CUKSA 회원 현황</h1>
+            </div>
+            <br>
+        </div>
+        <div class="container text-dark text-center">
+            <div class="row">
+                <!--<div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body" id="chart">
+                            <label>
+                                <input type="radio" name="dataset" id="dataset" value="opt1" checked> 칼리지별 한인 현황</label>
+                            <label>
+                                <input type="radio" name="dataset" id="dataset" value="opt2"> Faculty별 한인 현황</label>
+                            <label>
+                                <input type="radio" name="dataset" id="dataset" value="opt3"> CUKSA 회원 현황</label>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="col-md-4 col-sd-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div>
+                                <h1>칼리지별 한인 현황</h1>
+                                <br>
+                            </div>
+                            <div class="chart" id="chart1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sd-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div>
+                                <h1>Faculty별 한인 현황</h1>
+                                <br>
+                            </div>
+                            <div class="chart" id="chart2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sd-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div>
+                                <h1>CUKSA 회원 현황</h1>
+                                <br>
+                            </div>
+                            <div class="chart" id="chart3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="./assets/memberphotos/dm.png" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">이동민<br><small>President</small></h3>
+                            <p class="text-center">Integrated BBA
+                                <br>Chung Chi College
+                                <br>Dennis105@naver.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="./assets/memberphotos/jt.jpeg" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">정진택<br><small>External Vice President</small></h3>
+                            <p class="text-center">Professional Accountancy
+                                <br>Morningside College
+                                <br>jintaek.jeong@link.cuhk.edu.hk
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="./assets/memberphotos/is.jpeg" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">백인수<br><small>Internal Vice President</small></h3>
+                            <p class="text-center">Integrated BBA
+                                <br>Chung Chi College
+                                <br>backinsoo@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="./assets/memberphotos/yj.jpg" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">송영재<br><small>Director of IT Administration</small></h3>
+                            <p class="text-center">Systems Engineering and Engineering Management
+                                <br>United College
+                                <br>kalihman0515@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="./assets/memberphotos/ty.jpeg" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">김태윤<br><small>Director of Club Activities</small></h3>
+                            <p class="text-center">Integrated BBA
+                                <br>Shaw College
+                                <br>qhofr5169@naver.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="./assets/memberphotos/sm.jpeg" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">이상민<br><small>Director of Finance</small></h3>
+                            <p class="text-center">Integrated BBA
+                                <br>United College
+                                <br>leesangmin220@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="https://placehold.it/400x400" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">이주윤<br><small>Director of Human Resource</small></h3>
+                            <p class="text-center">Contemporary China Studies
+                                <br>Wu Yee Sun College
+                                <br>sophia_rhee@hotmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="./assets/memberphotos/ys.jpeg" alt="Portrait Picture">
+                        <div class="caption">
+                            <h3 class="text-center page-header">송연실<br><small>Director of Public Relations</small></h3>
+                            <p class="text-center">Contemporary China Studies
+                                <br>United College
+                                <br>songys0724@naver.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Information</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./activities.html">Activities</a></li>
+                        <li><a href="./colleges.html">Colleges</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Related</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.cuhk.edu.hk/">CUHK</a></li>
+                        <li><a href="https://www.facebook.com/groups/161426610666608/">Facebook Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <span>CUKSA ©2017</span>
+        </div>
+    </footer>
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h2>Login</h2>
+                    <p class="text-justify">
+                        Login system is under development
+                    </p>
+                    <br/>
+                    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="./js/c3.min.js"></script>
+    <!--<script data-require="d3@*" data-semver="4.0.0" src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script src="./js/chart.js"></script>
+    <!--<script src="./js/moving_donut.js"></script>-->
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
